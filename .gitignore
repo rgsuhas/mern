@@ -1,0 +1,21 @@
+# Ignore node_modules in all subfolders
+**/node_modules/
+
+# Ignore environment files
+**/.env
+
+# Ignore build artifacts
+**/dist/
+**/build/
+
+# Ignore log files
+**/*.log
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore IDE/editor configs
+.vscode/
+.idea/
+*.swp
