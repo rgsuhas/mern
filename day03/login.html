@@ -1,0 +1,38 @@
+
+<!DOCYPE HTML>
+  <html>
+
+  <head>
+    <title> </title>
+    <script type="text/javascript">
+      function userlogin() {
+        var uname = document.getElementById("TextBox1").value;
+        var password = document.getElementById("TextBox2").value;
+        if (uname === "admin" && password === "admin@123") {
+          console.log("Login successful!");
+          alert("WelCome to JavaScript")
+        } else {
+          console.log("Invalid credentials");
+          alert("Please Signup for Login")
+        }
+
+      }
+    </script>
+  </head>
+
+  <body>
+    <form>
+      User Name :
+      <input type="text" ID="TextBox1" name="username" />
+      <br />
+      password :
+      <input type="password" id="TextBox2" name="password" />
+      <br />
+      <input type="button" value="Login" onclick="userlogin()" />
+    </form>
+
+
+
+  </body>
+  </html>
+

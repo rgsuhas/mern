@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let password;
+    let attempts = 0;
+
+        do {
+            password = prompt("Enter password:");
+            attempts++;
+        } while (password !== "secret123" && attempts < 3);
+
+        if (password === "secret123") {
+            console.log("Access granted!");
+        } else {
+            console.log("Too many attempts. Access denied.");
+        }
+   </script>
+
+
+</body>
+</html>

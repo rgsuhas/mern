@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odd or even
+    </title>
+</head>
+<body>
+
+
+    <script type="text/javascript">
+        function isOdd() {
+            var userInput = Number(document.getElementById("txtNumber").value);
+            if (isNaN(userInput)) {
+                alert("Please enter a valid number.");
+            } else {
+                 (userInput % 2 === 0) ?
+                    (alert("The number is even."), alert(userInput)):
+                    (alert("The number odd "),  alert(userInput));
+                }
+            }
+    
+    </script>
+
+    <table style="border:1px solid black; font-family:Arial">
+        <tr>
+            <td>Enter a number</td>
+            <td><input type="text" id="txtNumber" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="Check Odd/Even" onclick="isOdd()" /></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

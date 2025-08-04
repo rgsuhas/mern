@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Role-Based Login</title>
+</head>
+<body>
+  <div>
+    <h1>Role-Based Login</h1>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter username" />
+
+    <br /><br />
+
+    <label for="role">Select Role:</label>
+    <select id="role">
+      <option value="">--Select Role--</option>
+      <option value="admin">Admin</option>
+      <option value="manager">Manager</option>
+      <option value="dev">Developer</option>
+      <option value="hr">HR</option>
+      <option value="intern">Intern</option>
+    </select>
+
+    <br /><br />
+
+    <button onclick="login()">Login</button>
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById("username").value.trim();
+      const role = document.getElementById("role").value;
+
+      if (!username || !role) {
+        alert("Please enter username and select a role.");
+        return;
+      }
+
+      switch (role) {
+        case "admin":
+          alert(`Welcome ${username}, you are logged in as Admin.`);
+          break;
+        case "manager":
+          alert(`Welcome ${username}, you are logged in as Manager.`);
+          break;
+        case "dev":
+          alert(`Welcome ${username}, you are logged in as Developer.`);
+          break;
+        case "hr":
+          alert(`Welcome ${username}, you are logged in as HR.`);
+          break;
+        case "intern":
+          alert(`Welcome ${username}, you are logged in as Intern.`);
+          break;
+        default:
+          alert("Invalid role selected.");
+      }
+    }
+  </script>
+</body>
+</html>

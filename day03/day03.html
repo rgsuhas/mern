@@ -1,0 +1,46 @@
+<!DOCYPE HTML>
+<html>
+<head>
+<title> </title>
+<script type="text/javascript">
+    function addNumbers()
+	{
+        var firstNumber = parseFloat(document.getElementById("txtFirstNumber").value);
+        var secondNumber = parseFloat(document.getElementById("txtSecondNumber").value);
+        if (isNaN(firstNumber) || isNaN(secondNumber)) {
+            alert("Please enter valid numbers.");
+        } else {
+            document.getElementById("txtResult").value = firstNumber + secondNumber;
+        }
+
+	}
+</script>
+
+</head>
+<body>
+
+<table style="border:1px solid black; font-family:Arial">
+    <tr>
+        <td>First Number</td>
+        <td><input type=”text” ID="txtFirstNumber" /></td>
+    </tr>
+    <tr>
+        <td>Second Number</td>
+        <td><input type=”text” ID="txtSecondNumber" /></td>
+    </tr>
+    <tr>
+        <td>Result</td>
+        <td><input type=”text” ID="txtResult" /></td>
+    </tr>
+    <tr>
+        <td>
+        </td>
+        <td>
+            <input type="button" value="Add" id="btnAdd" onclick="addNumbers()"/>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</htm>

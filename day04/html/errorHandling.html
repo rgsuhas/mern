@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Handling</title>
+  </head>
+  <body>
+    <script>
+
+
+      try {
+        // Referencing a function that does not exist cause an exception
+        document.write(sayHello());
+        // Since the above line causes an exception, the following line will not be executed
+        document.write("This line will not be executed");
+      } catch (e) {
+        // When an exception occurs, the control is transferred to the catch block
+        document.write("Description = " + e.description + "<br/>");
+        document.write("Message = " + e.message + "<br/>");
+        document.write("Stack = " + e.stack + "<br/><br/>");
+      }
+        try {
+            alert("Hello");
+        }
+        catch (e) {
+            document.write("JavaScript syntax errors cannot be caught in the catch block");
+        }
+
+      document.write("This line will be executed");
+    </script>
+  </body>
+</html>

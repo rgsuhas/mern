@@ -1,0 +1,28 @@
+
+html
+   head
+      title Simple template
+   body
+      if(user)
+         h1 Hi, #{user.name}
+      else
+         a(href = "/sign_up") Sign Up
+
+app.js
+var express = require('express');
+var app = express();
+
+
+app.set('view engine', 'pug');
+app.set('views','./views');
+
+
+app.get('/User_view', function(req, res){
+   res.render('User', {
+      user: {name: "Ayush", age: "20"}
+   });
+});
+
+
+app.listen(3000);
+

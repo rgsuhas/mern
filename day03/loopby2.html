@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    
+       
+var userChoice = "";
+do
+{
+    var targetNumber = Number(prompt("Please enter your target number", ""));
+    var start = 0;
+    while (start <= targetNumber)
+	{
+    	document.write(start + "<br/>");
+    	start = start + 2;
+	} var yesno = (prompt("YES OR NO", ""));
+        var targetNumber = Number(prompt("Please enter your target number", ""));
+            
+        while(yesno==="YES"){
+            
+
+            while (start <= targetNumber)
+            {
+                document.write(start + "<br/>");
+                start = start + 2;
+            }   
+        var yesno = (prompt("YES OR NO", ""));
+        }
+
+    
+
+    do
+	{
+    	userChoice = prompt("Do you want to continue - Yes or No").toUpperCase();
+        if (userChoice != "YES" && userChoice != "NO") {
+        	alert("Invalid choice. Please say, Yes or No");
+    	}
+	} while (userChoice != "YES" && userChoice != "NO");
+
+} while (userChoice == "YES");
+
+    
+
+
+    </script>
+    
+</body>
+</html>

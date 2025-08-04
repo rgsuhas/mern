@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oncclick errors </title>
+</head>
+<body>
+    <button id="errorButton">Click me to cause an error</button>
+    <script>
+        // 
+        document.getElementById("errorButton").onclick = function() {
+            try {
+                // This will cause a reference error because 'nonExistentFunction' is not defined
+                // change button color to obsidian blue
+                document.body.style.backgroundColor = "obsidianblue";
+                gell();
+            } catch (e) {
+                // Catching the error and displaying it
+                document.write("An error occurred: " + e.message + "<br/>");
+            }
+        };
+    </script>
+    
+</body>
+</html>

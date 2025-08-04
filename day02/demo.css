@@ -1,0 +1,36 @@
+
+        body {
+            font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 20px;
+            background-color: rgb(0, 0, 0);
+        }
+        h2 {
+            color: #7d769e;
+        }
+        #p1 {
+            line-height: 1.6;
+            color: #d9bdff;
+        }
+        #p2 {
+            line-height: 1.6;
+            color: #c090ff;
+        }
+        .p3 {
+            line-height: 1.6;
+            color: #a869ff;
+        }
+        h4{
+            color: #a869ff;
+        }
+
+        .hello {
+            background-color: #454343;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+            outline: #a869ff solid 2px;
+            max-width: 250px;
+        }
+
+ 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divide By Zero</title>
+</head>
+
+<body>
+    <script>
+
+        let numerator = 10;
+        let denominator = 0;
+        try {
+            // Attempting to divide by zero
+            if (denominator === 0) {
+                throw new Error("Division by zero is not allowed.");
+            }
+            let result = numerator / denominator; // This will cause an error
+            document.write("Result of division: " + result + "<br/>");
+        } catch (e) {
+            // Catching any exceptions that occur
+            document.write("An error occurred: " + e.message + "<br/>");
+        }
+    
+        // This line will always execute
+        document.write("This line will be executed regardless of the previous error.");
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+</head>
+<body>
+    <div>
+        <h1>Discount Calculator</h1> 
+        <input type="number" name="amt" id="userinput" placeholder="Enter amount">
+        <button type="submit" onclick="calculateDiscount()">Check</button>
+    </div>  
+   
+    <script>
+        function calculateDiscount() {
+            var amount = Number(document.getElementById("userinput").value);
+
+            if (amount > 3000 && amount < 5000) {
+                let discounted = amount * 0.8;
+                let saved = amount * 0.2;
+                alert("Your discounted price is " + discounted + ". You saved " + saved + ".");
+            } else if (amount > 1500 && amount <= 3000) {
+                let discounted = amount * 0.85;
+                let saved = amount * 0.15;
+                alert("Your discounted price is " + discounted + ". You saved " + saved + ".");
+            } else {
+                alert("No discount applicable or amount out of range.");
+            }
+        }
+    </script>
+    
+</body>
+</html>

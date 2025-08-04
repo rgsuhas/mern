@@ -1,0 +1,64 @@
+<!DOCYPE HTML>
+  <html>
+
+  <head>
+    <title> </title>
+    <script type="text/javascript">
+      function is18(){
+        var userInput = Number(document.getElementById("txtAge").value);
+
+        if (userInput == 18) {
+          alert("You are 18 years old");
+        }
+        else if (userInput < 18) {
+          alert("You are not 18 years old");
+        }
+        else  {
+          alert("You are older than 18 years old");
+    
+        }
+      };
+
+      function is18Switch(){
+
+        var userInput = Number(document.getElementById("txtAge").value);
+
+        switch (userInput) {
+  
+          case (userInput < 18):
+            alert("You are not 18 years old");
+            break;
+          case (userInput >= 18):
+            alert("You are older than 18 yrs");
+            break;
+        
+          default:
+            alert("this is default case");
+            break;
+        }
+      };
+      function is18Ternary(){ 
+        userInput = document.getElementById("txtAge").value;
+        var result = (userInput >= 18) ? "You are an adult" : "You are a minor";
+        alert(result);
+      }
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <table style="border:1px solid black; font-family:Arial">
+
+      <input type="text" id="txtAge" placeholder="Enter your age">
+    
+        <td>
+          <input type="button" value="is18?" id="btnAdd" onclick="is18Ternary()" />
+        </td>
+    
+    </table>
+
+
+  </body>
+  </htm>

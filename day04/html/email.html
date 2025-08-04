@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email validator</title>
+</head>
+<body>
+
+    <h2>
+        E-mail validator
+    </h2>
+
+    <input id="emailu" type="email" placeholder="enter email"></input>
+    <button type="submit" onclick="hi()">ghfhg</button>
+    <script>
+        function hi(emailu){
+            const email = document.getElementById("emailu").value;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailPattern.test(email)) {
+                alert("Valid email address");
+            } else {
+                alert("Invalid email address");
+            }
+        }
+    </script> 
+    asdjhsa
+</body>
+</html>

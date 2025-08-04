@@ -1,0 +1,42 @@
+<!DOCYPE HTML>
+  <html>
+
+  <head>
+    <title> </title>
+    <script type="text/javascript">
+      function ifCon() {
+        var userInput = Number(prompt("Please enter a number", ""));
+
+        if (userInput == 1) {
+          alert("You number is One");
+        }
+        if (userInput == 2) {
+          alert("You number is Two");
+        }
+        if (userInput == 3) {
+          alert("Your number is Three");
+        }
+        if (userInput != 1 && userInput != 2 && userInput != 3) {
+          alert("Your number is not between 1 and 3");
+        }
+
+
+      }
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <table style="border:1px solid black; font-family:Arial">
+    
+        <td>
+          <input type="button" value="Add" id="btnAdd" onclick="ifCon()" />
+        </td>
+    
+    </table>
+
+
+  </body>
+  </htm>
