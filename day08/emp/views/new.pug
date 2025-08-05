@@ -1,0 +1,35 @@
+
+extends layout
+
+block content
+  h2 add new employee
+  form(action=`/create`, method="POST")
+    label name:
+    input(type="text", name="name", value=employee.name, required)
+    br
+    label gender:
+    input(type="text", name="gender", value=employee.gender, required)
+    br
+    label email :
+    input(type="email", name="email", value=employee.email, required)
+    br
+    label phone:
+    input(type="text", name="phone", value=employee.phone, required)
+    br
+    label dept:
+    input(type="text", name="dept", value=employee.dept, required)
+    br
+  
+    label location:
+    input(type="text", name="location", value=employee.location, required)
+    br
+    button(type="submit") ADD
+
+
+//-  id: String,
+//-   name: String,
+//-   email: String,
+//-   phone: String,
+//-   gender: String,
+//-   dept: String,
+//-   location: String
