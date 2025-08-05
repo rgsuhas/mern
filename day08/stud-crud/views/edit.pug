@@ -1,0 +1,16 @@
+
+extends layout
+
+block content
+  h2 Edit Student
+  form(action=`/update/${student._id}`, method="POST")
+    label Name:
+    input(type="text", name="name", value=student.name, required)
+    br
+    label Age:
+    input(type="number", name="age", value=student.age, required)
+    br
+    label Course:
+    input(type="text", name="course", value=student.course, required)
+    br
+    button(type="submit") Update

@@ -1,0 +1,16 @@
+
+extends layout
+
+block content
+  h2 Add New Student
+  form(action="/create", method="POST")
+    label Name:
+    input(type="text", name="name", required)
+    br
+    label Age:
+    input(type="number", name="age", required)
+    br
+    label Course:
+    input(type="text", name="course", required)
+    br
+    button(type="submit") Add
