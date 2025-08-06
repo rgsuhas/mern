@@ -13,8 +13,9 @@ table {
 }
 
 th, td {
-  padding: 8px;
+  padding: 3px;
   border-bottom: 1px solid #ccc;
+  justify-content: center;
 }
 
 nav {
