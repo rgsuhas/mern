@@ -10,6 +10,7 @@ function App() {
       .then(data => {
         console.log(data)
         setProducts(data.products)
+        console.log(products)
       })
       .catch(err => console.error(err))
   }, [])
